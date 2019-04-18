@@ -98,13 +98,13 @@
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
-	<!-- 
+
           <id>central</id>
           <name>Jenkins-integration</name>
           <url>http://ech-10-168-129-177.mastercard.int:8082/artifactory/Jenkins-integration</url>
         </repository>
         <repository>
-          <snapshots /> -->
+          <snapshots />
           <id>snapshots</id>
           <name>Jenkins-snapshot</name>
           <url>http://ech-10-168-129-177.mastercard.int:8082/artifactory/Jenkins-snapshot</url>
