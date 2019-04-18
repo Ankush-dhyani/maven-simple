@@ -57,7 +57,7 @@
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>war</goal>
+                            <goal>jar</goal>
                         </goals>
 		</execution>
                </executions>
@@ -71,7 +71,7 @@
 						<execution>
 							<id>attach-javadocs</id>
 							<goals>
-								<goal>war</goal>
+								<goal>jar</goal>
 							</goals>
 						</execution>
 					</executions>
