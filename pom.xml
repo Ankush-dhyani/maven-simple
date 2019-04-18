@@ -57,11 +57,11 @@
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>war</goal>
                         </goals>
-					</execution>
-                </executions>
-		</plugin>
+		</execution>
+               </executions>
+	</plugin>
             
         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -71,7 +71,7 @@
 						<execution>
 							<id>attach-javadocs</id>
 							<goals>
-								<goal>jar</goal>
+								<goal>war</goal>
 							</goals>
 						</execution>
 					</executions>
