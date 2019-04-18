@@ -9,7 +9,16 @@
 
   <name>Simple Maven example</name>
   <url>https://jitpack.io/#jitpack/maven-simple/0.1</url>
-
+  
+  <!--Added on 18/04 12:46 by Ankush -->
+  
+  <repositories>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+  </repositories>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -17,6 +26,16 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- Added on 18/04 12:29 to add below dependency-->
+    
+    <dependency>
+		  <groupId>com.github.jitpack</groupId>
+		  <artifactId>maven-simple</artifactId>
+		  <version>0.1</version>
+	    </dependency>
+    </dependency>
+    
   </dependencies>
   
   <build>
@@ -59,5 +78,60 @@
       </plugin>
     </plugins>
   </build>
+
+ <!--Added on 18/04 12:43 by Ankush -->
+
+  <servers>
+    <server>
+      <username>jenkins</username>
+      <password>ankush</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>jenkins</username>
+      <password>ankush</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>Jenkins-integration</name>
+          <url>http://ech-10-168-129-177.mastercard.int:8082/artifactory/Jenkins-integration</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>Jenkins-snapshot</name>
+          <url>http://ech-10-168-129-177.mastercard.int:8082/artifactory/Jenkins-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>plugins-release</name>
+          <url>http://ech-10-168-129-177.mastercard.int:8082/artifactory/plugins-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>plugins-snapshot</name>
+          <url>http://ech-10-168-129-177.mastercard.int:8082/artifactory/plugins-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
 
 </project>
