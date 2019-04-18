@@ -39,16 +39,15 @@
   
   <build>
     <plugins>
-    
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.2</version>
-        <configuration> <!-- Compile java 7 compatible bytecode -->
-          <source>1.7</source>
-          <target>1.7</target>
-        </configuration>
-      </plugin>
+	<plugin>
+        	<groupId>org.apache.maven.plugins</groupId>
+        	<artifactId>maven-compiler-plugin</artifactId>
+        	<version>3.2</version>
+        	<configuration> <!-- Compile java 7 compatible bytecode -->
+          	<source>1.7</source>
+          	<target>1.7</target>
+        	</configuration>
+      	</plugin>
       
       <plugin>  <!-- Create sources.jar -->
             <groupId>org.apache.maven.plugins</groupId>
@@ -77,8 +76,7 @@
                     </execution>
                 </executions>
       </plugin>
-    </plugins>
-	  
+   
 	  <plugin>
                <artifactId>maven-clean-plugin<  /artifactId>
                <version>2.2</version>
@@ -87,8 +85,8 @@
 	  <plugin>
                <artifactId>maven-install-plugin</artifactId>
                <version>2.2</version>
-            </plugin>
-	  
+           </plugin>
+	</plugins>
   </build>
 
  <!--Added on 18/04 12:43 by Ankush -->
