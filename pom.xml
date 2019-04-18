@@ -80,18 +80,6 @@
 
  <!--Added on 18/04 12:43 by Ankush -->
 
-  <servers>
-    <server>
-      <username>jenkins</username>
-      <password>ankush</password>
-      <id>central</id>
-    </server>
-    <server>
-      <username>jenkins</username>
-      <password>ankush</password>
-      <id>snapshots</id>
-    </server>
-  </servers>
   <profiles>
     <profile>
       <repositories>
